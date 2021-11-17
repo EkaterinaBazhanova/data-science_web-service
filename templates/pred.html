@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Mall customer's cluster prediction</title>
+    <div class="header">
+        <h1 align="center"><font color="white">Mall customer's cluster prediction</font></h1>
+    </div>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+</head>
+
+<body>
+    <div class="content">
+        <div class="form">
+            <h2 align="center">Please enter the customer's details</h2>
+            <form method="POST" action="/data">
+        {{data_form.hidden_tag() }}
+        <p>
+            Genre: {{data_form.genre(size=20)}}
+        </p>
+        <p>
+            Age: {{data_form.age(size=20)}} <br>
+        </p>
+        <p>
+            Annual income (k$): {{data_form.income(size=20)}}<br>
+        </p>
+        <p>
+            Spending score (1-100): {{data_form.score(size=20)}}<br>
+        </p>
+        <p>
+        <input type="submit" value="Get cluster" class="exclusive-button">
+        </p>
+        </form>
+        </div>
+
+        <div class="form">
+            <h2 align="center">OR upload a dataset with customers' data</h2>
+            <form method="POST" action="/file" enctype="multipart/form-data">
+        {{file_form.hidden_tag() }}
+        <p>
+        Customers' data: {{file_form.file}} <br>
+        </p>
+        <p>
+        <input type="submit" value="Send file" class="exclusive-button">
+        </p>
+        </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© Copyright - Bazhanova E.N. All Rights Reserved.</p>
+    </div>
+
+</body>
+
+</html>

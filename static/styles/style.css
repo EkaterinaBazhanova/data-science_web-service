@@ -1,0 +1,110 @@
+body {
+    font-family: Montserrat;
+    font-size: 16px;
+}
+body::before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background: url(/static/shop_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  filter: blur(5px);
+}
+
+.index_welcome{
+    color: white;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    margin:0 auto;
+    background-color: #EECBAD;
+    width: 800px;
+    margin-top:100px;
+}
+.index_text{
+    color:#8B7355;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 100px;
+    background-color:#EEEEE0;
+    width: 800px;
+    position: relative;
+    margin:0 auto;
+}
+.header {
+    background-color: #EECBAD;
+    height: 100px;
+    position: relative;
+    padding-top: 30px;
+    text-color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.content {
+    height: 600px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    clear:both;
+    padding-left: 50px;
+    padding-top: 20px;
+    font-size: 20px;
+    color:#8B7355;
+}
+.form {
+    color: #8B7355;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 auto;
+    width: 600px;
+    background-color: #EEEEE0;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.exclusive-button {
+    color: #8B795E;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    letter-spacing: 3.6px;
+    text-align: center;
+    width: 150px;
+    height: 46px;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 23px;
+    display: inline-block;
+    text-decoration: none;
+    background: #FFDAB9;
+    margin-left: 60px;
+}
+.exclusive-button:hover {
+    box-shadow: 0 2px 7px 5px rgba(33, 33, 33, 0.35);
+}
+
+.exclusive-button:active {
+    box-shadow: 0 2px 7px 5px rgba(33, 33, 33, 0.35);
+    font-size: 14px;
+    box-shadow: inset 0 2px 7px 5px rgba(33, 33, 33, 0.35);
+}
+.footer {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+
+
+
+
+
